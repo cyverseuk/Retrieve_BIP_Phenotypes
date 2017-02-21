@@ -1,0 +1,13 @@
+universe = docker
+docker_image = cyverseuk/fastq-dump:v0.0.2
+
+output = sra-tools.out
+error = sra-tools.err
+log = sra-tools.log
+
+request_memory = 12G
+request_cpus = 1
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+transfer_output_files = SRA_download

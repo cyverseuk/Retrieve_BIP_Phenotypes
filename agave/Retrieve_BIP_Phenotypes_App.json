@@ -1,0 +1,52 @@
+{
+  "name"          : "Retrieve_BIP_Phenotypes",
+  "label"         : "Phenotypes",
+  "appID"         : "",
+  "archive"       : "true",
+  "version"       : "0.0.0",
+  "executionType" : "CLI",
+
+  "checkpointable"   : true,
+  "executionSystem"  : "cyverseUK-Batch2",
+  "deploymentSystem" : "cyverseUK-Storage2",
+  "deploymentPath"   : "apps/Retrieve_BIP_Phenotypes/agave",
+  "templatePath"     : "wrapper.sh",
+  "testPath"         : "wrapper.sh",
+  "parallelism"      : "SERIAL",
+  "shortDescription" : "Test for Retrieve_BIP_Phenotypes",
+  "longDescription"  : "Test for Retrieve_BIP_Phenotypes",
+  "helpURI"          : "https://bip.earlham.ac.uk/api_documentation",
+  "datePublished"    : "22. February 2017",
+  "author"           : "Annemarie Eckes",
+
+  "tags": [ "testing"],
+  "ontology": [ ],
+
+  "inputs" : [ {
+      "id": "input_1",
+      "details" : {
+        "label": "trial_name",
+        "description": "trial name as appears in the Brassica information Portal"
+      },
+      "value": {
+        "required" : "true",
+        "default" : "",
+        "visible":true
+      },
+      "id": "input_2",
+      "details" : {
+        "label": "api_key",
+        "description": "Your API key which is associated with your BIP-account. Sign up, if you don't have one yet."
+      },
+      "value": {
+        "required" : "true",
+        "default" : "",
+        "visible":true
+          },
+      "semantics": {
+        "minCardinality": 1,
+	"maxCardinality": -1
+      }
+    }
+  ]
+}
