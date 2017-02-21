@@ -3,7 +3,6 @@
 
 
 # Pull base image.
-FROM ubuntu:14.04.4
 FROM ruby:2.1-onbuild
 
 MAINTAINER Annemarie Eckes, Annemarie.Eckes@earlham.ac.uk
@@ -11,12 +10,12 @@ MAINTAINER Annemarie Eckes, Annemarie.Eckes@earlham.ac.uk
 # clone repo
 WORKDIR /tmp
 
-COPY retrieve_phenotypes_and_ID.rb retrieve_phenotypes_and_ID.rb
-
+COPY retrieve_phenotypes_and_ID.rb /tmp/retrieve_phenotypes_and_ID.rb
+COPY retrieve_trial.sh /tmp/retrieve_trial.sh
 
 #WORKDIR /tmp
 
 RUN chmod +x retrieve_phenotypes_and_ID.rb   #to remove permission error
-RUN ruby retrieve_phenotypes_and_ID.rb
+RUN chmod +x retrieve_trial.sh
 
-ENTRYPOINT ["/tmp/retrieve_phenotypes_and_ID.rb"]
+ENTRYPOINT ["/tmp/retrieve_trial.sh"]

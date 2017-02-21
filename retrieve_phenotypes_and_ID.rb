@@ -158,7 +158,8 @@ end
 
 
 STDERR.puts '8. Generating output CSV to file Phenotypes.csv'
-filename = "Phenotypes.csv"
+filename = "Phenotypes_BIP_#{trial_encoded_name}.csv"
+
  output_string = CSV.open(filename,'w') do |csv|
 # output_string = CSV.generate(col_sep: "\t") do |csv|
   # NOTE: We do not want to use any quotes nor include whitespace characters except for column separators.
@@ -194,5 +195,5 @@ filename = "Phenotypes.csv"
     end
 end
 
-
+STDERR.puts filename 
 STDERR.puts '9. Finished'
