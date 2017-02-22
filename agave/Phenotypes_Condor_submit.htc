@@ -1,9 +1,9 @@
 universe = docker
-docker_image = cyverseuk/fastq-dump:v0.0.2
+docker_image = retrieve_bip_phenotypes:v0.0.1
 
-output = sra-tools.out
-error = sra-tools.err
-log = sra-tools.log
+output = BIP-phenotypes.out
+error = BIP-phenotypes.err
+log = BIP-phenotypes.log
 
 request_memory = 12G
 request_cpus = 1

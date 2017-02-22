@@ -21,9 +21,10 @@
 
   "tags": [ "testing"],
   "ontology": [ ],
-
-  "inputs" : [ {
-      "id": "input_1",
+  "inputs":[ ],
+  "parameter" : [
+    {
+      "id": "param_1",
       "details" : {
         "label": "trial_name",
         "description": "trial name as appears in the Brassica information Portal"
@@ -33,7 +34,12 @@
         "default" : "",
         "visible":true
       },
-      "id": "input_2",
+           "semantics" : {
+     	"maxCardinality" : 1
+      }
+     },
+     {
+      "id": "param_2",
       "details" : {
         "label": "api_key",
         "description": "Your API key which is associated with your BIP-account. Sign up, if you don't have one yet."
@@ -41,7 +47,7 @@
       "value": {
         "required" : "true",
         "default" : "",
-        "visible":true
+        "visible":false
           },
       "semantics": {
         "minCardinality": 1,

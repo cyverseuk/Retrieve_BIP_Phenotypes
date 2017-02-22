@@ -1,16 +1,14 @@
 #!/bin/bash
 
 
-Seq_names="${input_1}"
+trial_name="${param_1}"
+api_key="${param_2}"
 
 
-#mv $filename Seq_names.txt
-
-
-cp fastq_dump_submit.htc condorsubmit.htc
-echo transfer_input_files = ${input_1} >> condorsubmit.htc
-echo arguments = ${input_1}  >> condorsubmit.htc
-
+cp Phenotypes_Condor_submit.htc condorsubmit.htc
+#echo transfer_input_files = ${input_1} >> condorsubmit.htc
+echo arguments = ${param_1}  >> condorsubmit.htc
+echo arguments =${param_2} >> condorsubmit.htc
 
 #H5COMMA=`echo ${h5} | sed -e 's/ /,/g'`
 #echo transfer_input_files = ${adapters},$H5COMMA >> sratools_submit.htc
