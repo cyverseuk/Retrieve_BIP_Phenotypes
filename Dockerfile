@@ -10,6 +10,7 @@ MAINTAINER Annemarie Eckes, Annemarie.Eckes@earlham.ac.uk
 # clone repo
 WORKDIR /tmp
 
+COPY Gemfile.lock /tmp/Gemfile.lock
 COPY retrieve_phenotypes_and_ID.rb /tmp/retrieve_phenotypes_and_ID.rb
 COPY retrieve_trial.sh /tmp/retrieve_trial.sh
 
