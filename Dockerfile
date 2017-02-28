@@ -3,6 +3,7 @@
 
 
 # Pull base image.
+FROM ubuntu:14.04.4
 FROM ruby:2.1-onbuild
 
 MAINTAINER Annemarie Eckes, Annemarie.Eckes@earlham.ac.uk
@@ -19,5 +20,6 @@ COPY retrieve_trial.sh /usr/src/app/retrieve_trial.sh
 
 RUN chmod +x retrieve_phenotypes_and_ID.rb   #to remove permission error
 RUN chmod +x retrieve_trial.sh
+RUN bundle install
 
-ENTRYPOINT ["./retrieve_trial.sh"]
+ENTRYPOINT ["/usr/src/app/retrieve_trial.sh"]

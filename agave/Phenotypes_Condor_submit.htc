@@ -1,5 +1,5 @@
 universe = docker
-docker_image = retrieve_bip_phenotypes:v0.0.1
+docker_image = teatree/retrieve_bip_phenotypes:v0.0.1
 
 output = BIP-phenotypes.out
 error = BIP-phenotypes.err
@@ -10,4 +10,4 @@ request_cpus = 1
 
 should_transfer_files = YES
 when_to_transfer_output = ON_EXIT
-transfer_output_files = SRA_download
+transfer_output_files = Seq_names.txt
