@@ -1,5 +1,5 @@
 universe = docker
-docker_image = teatree/retrieve_bip_phenotypes:v0.0.6
+docker_image = teatree/retrieve_bip_phenotypes:v0.0.7
 
 output = BIP-phenotypes.out
 error = BIP-phenotypes.err
