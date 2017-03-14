@@ -5,6 +5,8 @@
   "archive"       : "true",
   "version"       : "0.0.0",
   "executionType" : "CLI",
+  "shortDescription" : "To retrieve trait measurements from the Brassica Information Portal",
+  "longDescription"  : "This app helps extract trait measurements from a given trial from the Brassica Information Portal. The trial name as it is registered in the BIP is needed, as well as the BIP-API-key. The output file will be a .csv-file with accession identifiers, SRA-identifiers if present and the measurements for the traits of thet trial",
 
   "checkpointable"   : true,
   "executionSystem"  : "cyverseUK-Batch2",
@@ -22,7 +24,7 @@
   "tags": [ "testing"],
   "ontology": [ ],
   "inputs":[ ],
-  "parameter" : [
+  "parameters" : [
     {
       "id": "param_1",
       "details" : {
@@ -31,6 +33,7 @@
       },
       "value": {
         "required" : "true",
+        "type": "string",
         "default" : "",
         "visible":true
       },
@@ -46,12 +49,12 @@
       },
       "value": {
         "required" : "true",
+        "type": "string",
         "default" : "",
-        "visible":false
+        "visible":true
           },
       "semantics": {
-        "minCardinality": 1,
-	"maxCardinality": -1
+        "minCardinality": 1
       }
     }
   ]
