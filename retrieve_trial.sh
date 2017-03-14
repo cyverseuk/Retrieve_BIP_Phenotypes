@@ -16,6 +16,7 @@ ruby /usr/src/app/retrieve_phenotypes_and_ID.rb $trial_name $api_key
 echo "creating list of Sequence Identifiers (Seq_names.txt)"
 
 
-./ExtractSeqIds.sh
+./ExtractSeqIds.sh ${trial_name}
+
 
 echo "done"

@@ -22,7 +22,8 @@ else
 
 # remove all comments and filter out Sequence identifiers for gtype-retrieval.
 
-done < Phenotypes_BIP_$trial_name.csv
+done < Phenotypes_BIP_${trial_name}.csv
+
 tail -n +2 Sequence_retrieval_summary.txt >Sequence_IDs_log.txt
 grep 'SRR' Sequence_IDs_log.txt | tr ',' '\t' | awk '{print $1}' >Seq_names.txt
 
