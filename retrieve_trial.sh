@@ -10,7 +10,7 @@ ls
 
 echo "Start running ruby client"
 
-ruby retrieve_phenotypes_and_ID.rb $trial_name $api_key
+ruby /usr/src/app/retrieve_phenotypes_and_ID.rb $trial_name $api_key
 
 echo "Extract sequence identifiers"
 cat Phenotypes_BIP_${trial_name}.csv| tr ',' '\t'|awk '{print $1 "," $2}' >> Seq_names.txt

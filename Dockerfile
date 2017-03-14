@@ -18,7 +18,7 @@ COPY retrieve_trial.sh /usr/src/app/retrieve_trial.sh
 WORKDIR /usr/src/app
 
 
-RUN chmod +x retrieve_phenotypes_and_ID.rb   #to remove permission error
+RUN chmod 777 retrieve_phenotypes_and_ID.rb   #to remove permission error
 RUN chmod +x retrieve_trial.sh
 RUN bundle install
 RUN /usr/src/app/retrieve_trial.sh
