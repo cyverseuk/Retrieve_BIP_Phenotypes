@@ -1,9 +1,12 @@
 #!/bin/bash
 
-echo "Retrieving Information for trial $trial_name from BIP"
-#make sure order of inputs is as in .ruby client script:
 trial_name=$1
 api_key=$2
+
+echo "Retrieving Information for trial ${trial_name} from BIP"
+#make sure order of inputs is as in .ruby client script:
+
+ls
 
 echo "Start running ruby client"
 
