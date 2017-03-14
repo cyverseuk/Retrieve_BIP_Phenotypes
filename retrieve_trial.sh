@@ -12,8 +12,10 @@ echo "Start running ruby client"
 
 ruby /usr/src/app/retrieve_phenotypes_and_ID.rb $trial_name $api_key
 
-echo "Extract sequence identifiers"
+
+echo "creating list of Sequence Identifiers (Seq_names.txt)"
+
+
 ./ExtractSeqIds.sh
 
-
-echo "all done"
+echo "done"
