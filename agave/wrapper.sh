@@ -9,8 +9,8 @@ cp Phenotypes_Condor_submit.htc condorsubmit.htc
 #echo transfer_input_files = ${input_1} >> condorsubmit.htc
 echo arguments = "${trial_name} ${api_key}"  >> condorsubmit.htc
 echo transfer_output_files = Seq_names.txt,Phenotypes_BIP_${trial_name}.csv,Sequence_IDs_log.txt
-echo should_transfer_files = YES
-echo when_to_transfer_output = ON_EXIT
+echo should_transfer_files = YES >> condorsubmit.htc
+echo when_to_transfer_output = ON_EXIT >> condorsubmit.htc
 
 
 #H5COMMA=`echo ${h5} | sed -e 's/ /,/g'`
