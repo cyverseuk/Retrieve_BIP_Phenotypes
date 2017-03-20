@@ -39,7 +39,7 @@ _Optional:_ you can include an output location, which is different from the defa
 
 Change to this system will make the output available for further tools and workflows in the CyVerse US and the Discovery Environment, which is currently not directly hooked-up to the CyVerseUK system. This is likely to be changed in the future, and no DE-specific archiveSystem specifications need to be mentioned in the RunApp.json.
 
-_Note:_ For big jobs, you need to allocate more memory. Currently, this app runs on default parameters. You do this by adding more attributes to the job submission json. A list of all attributes is in table 1, it is taken from the AGAVE API development website []#job-submissions]http://developer.agaveapi.co/#job-submission).
+_Note:_ For big jobs, you need to allocate more memory. Currently, this app runs on default parameters. You do this by adding more attributes to the job submission json. A list of all attributes is in table 1, it is taken from the AGAVE API development website [job-submissions]http://developer.agaveapi.co/#job-submission).
 
 <table>
     <thead>
