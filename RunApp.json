@@ -1,0 +1,9 @@
+{
+  "name"    : "Retrieve_BIP_Phenotypes",
+  "appId"   : "Retrieve_BIP_Phenotypes-0.0.0",
+  "archive" : "true",
+  "parameters": {
+    "param_1"   : "<BIP_trial_name_goes_here>",
+    "param_2"   : "<your_BIP_API_key_goes_here>"
+  }
+}
