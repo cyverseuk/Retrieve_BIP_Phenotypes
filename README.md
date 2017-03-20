@@ -28,8 +28,13 @@ You need to have a [CyVerse](https://user.cyverse.org/) and a [BIP](https://bip.
       }
     }
 
-_Optional:_ you can include an output location, which is different from the default CyVerseUK-Storage system.
-
 Then, after creating an up-to-date AGAVE API token, run
 
     Jobs-submit -W -F RunApp.json
+
+
+_Optional:_ you can include an output location, which is different from the default CyVerseUK-Storage system.
+
+    "archiveSystem": "data.iplantcollaborative.org",
+
+Change to this system will make the output available for further tools and workflows in the CyVerse US and the Discovery Environment, which is currently not directly hooked-up to the CyVerseUK system. This is likely to be changed in the future, and no DE-specific archiveSystem specifications need to be mentioned in the RunApp.json.
