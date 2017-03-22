@@ -17,6 +17,7 @@ echo when_to_transfer_output = ON_EXIT >> condorsubmit.htc
 #echo transfer_input_files = ${adapters},$H5COMMA >> sratools_submit.htc
 echo queue >> condorsubmit.htc
 
+jobid=`condor_submit -batch-name ${PWD##*/} lib/condorSubmitEdit.htc`
 jobid=`condor_submit condorsubmit.htc`
 jobid=`echo $jobid | sed -e 's/Sub.*uster //'`
 jobid=`echo $jobid | sed -e 's/\.//'`
