@@ -9,11 +9,20 @@ Sequence IDs get passed on into a Seq_names.txt file for further queries. It als
 In case of no Sequence ID's, the Accession is skipped, but recorded in the log.
 In case of multiple Sequence ID's, the first Sequence is used for the list of Seq_names and will then be used in subsequent downloads.
 
-docker run CyVerseUK/retrieve_bip_phenotypes <BIP_trial_name> <your_BIP_API_key>  
+
+## User Instructions for use with Docker only
+
+example command
+
+( Note that you need to have a a [BIP](https://bip.earlham.ac.uk/) user account to provide the API key.)
+
+```
+docker run -c '/aboslute/path/to/where/output/files/should/be/stored/':/tmp CyVerseUK/retrieve_bip_phenotypes <BIP_trial_name> <your_BIP_API_key>  
+```
 
 *This Docker Image is used in context with the AGAVE API and CyVerseUK, so that the output can be integrated into further CyVerse workflows*
 
-## User Instructions
+## User Instructions for use with AGAVE and CyVerse
 You don't need to pull this image, Condor will do this in the background for you.
 You need to have a [CyVerse](https://user.cyverse.org/) and a [BIP](https://bip.earlham.ac.uk/) account, downloaded the [cyverse-sdk client](https://github.com/cyverse/cyverse-sdk) (optional, but makes querying easier) and you must have created a RunApp.json, containing:
 
