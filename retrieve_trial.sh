@@ -19,4 +19,10 @@ echo "creating list of Sequence Identifiers (Seq_names.txt)"
 /usr/src/app/ExtractSeqIds.sh ${trial_name}
 
 
+echo " moving files to output folder"
+
+cp /usr/src/app/*.csv /tmp/
+cp /usr/src/app/*.txt /tmp/
+
+
 echo "done"

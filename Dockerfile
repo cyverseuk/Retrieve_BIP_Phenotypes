@@ -14,7 +14,7 @@ MAINTAINER Annemarie Eckes, Annemarie.Eckes@earlham.ac.uk
 COPY Gemfile.lock /usr/src/app/Gemfile.lock
 COPY retrieve_phenotypes_and_ID.rb /usr/src/app/retrieve_phenotypes_and_ID.rb
 COPY retrieve_trial.sh /usr/src/app/retrieve_trial.sh
-COPY ExtractSeqIds.sh /usr/src/app/ExtractSeqIds.sh
+ADD ExtractSeqIds.sh /usr/src/app/ExtractSeqIds.sh
 
 WORKDIR /usr/src/app
 
@@ -23,6 +23,6 @@ RUN chmod 777 retrieve_phenotypes_and_ID.rb   #to remove permission error
 RUN chmod +x retrieve_trial.sh
 RUN chmod +x ExtractSeqIds.sh
 RUN bundle install
-RUN /usr/src/app/retrieve_trial.sh
+#RUN /usr/src/app/retrieve_trial.sh
 
 ENTRYPOINT ["/usr/src/app/retrieve_trial.sh"]
