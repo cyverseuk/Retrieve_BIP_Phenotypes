@@ -9,6 +9,7 @@ Sequence IDs get passed on into a Seq_names.txt file for further queries. It als
 In case of no Sequence ID's, the Accession is skipped, but recorded in the log.
 In case of multiple Sequence ID's, the first Sequence is used for the list of Seq_names and will then be used in subsequent downloads.
 
+docker run CyVerseUK/retrieve_bip_phenotypes <BIP_trial_name> <your_BIP_API_key>  
 
 *This Docker Image is used in context with the AGAVE API and CyVerseUK, so that the output can be integrated into further CyVerse workflows*
 
