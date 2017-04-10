@@ -15,8 +15,6 @@
   "templatePath"     : "wrapper.sh",
   "testPath"         : "wrapper.sh",
   "parallelism"      : "SERIAL",
-  "shortDescription" : "Test for Retrieve_BIP_Phenotypes",
-  "longDescription"  : "Test for Retrieve_BIP_Phenotypes",
   "helpURI"          : "https://bip.earlham.ac.uk/api_documentation",
   "datePublished"    : "22. February 2017",
   "author"           : "Annemarie Eckes",
