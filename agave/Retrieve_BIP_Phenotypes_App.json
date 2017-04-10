@@ -1,6 +1,6 @@
 {
-  "name"          : "Retrieve-BIP-Phenotypes",
-  "label"         : "Retrieve-BIP-Phenotypes",
+  "name"          : "Retrieve-Brassica-Phenotypes",
+  "label"         : "Retrieve-Brassica-Phenotypes",
   "appID"         : "",
   "archive"       : "true",
   "version"       : "0.0.0",
