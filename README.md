@@ -1,6 +1,6 @@
 ![alt tag](https://github.com/cyverseuk/Retrieve_BIP_Phenotypes/blob/master/images/RetrieveBIPPhenoypes-logo-01Artboard-2.png)
 
-# Retrieve-Brassica-Phenotypes_Phenotypes
+# Retrieve-Brassica-Phenotypes
 Docker container for retrieveing Phenotypic data from the Brassica Information Portal. It runs a ruby script that uses the BIP-API to retrieve
 Accession name, Sequence ID, and trait measurements and stores output in .csv-format
 The resulting header is as follows:
