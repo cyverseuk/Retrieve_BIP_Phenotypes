@@ -11,6 +11,8 @@ Sequence IDs get passed on into a Seq_names.txt file for further queries. It als
 In case of no Sequence ID's, the Accession is skipped, but recorded in the log.
 In case of multiple Sequence ID's, the first Sequence is used for the list of Seq_names and will then be used in subsequent downloads.
 
+Please renew your BIP-API-key after your download for security reasons.
+
 
 ## User Instructions for use with Docker only
 
