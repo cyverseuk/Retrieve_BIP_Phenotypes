@@ -1,4 +1,6 @@
-# Retrieve_BIP_Phenotypes
+![alt tag](https://github.com/cyverseuk/Retrieve_BIP_Phenotypes/blob/master/images/RetrieveBIPPhenoypes-logo-01Artboard-2.png)
+
+# Retrieve-Brassica-Phenotypes_Phenotypes
 Docker container for retrieveing Phenotypic data from the Brassica Information Portal. It runs a ruby script that uses the BIP-API to retrieve
 Accession name, Sequence ID, and trait measurements and stores output in .csv-format
 The resulting header is as follows:
@@ -21,6 +23,12 @@ docker run -c '/aboslute/path/to/where/output/files/should/be/stored/':/tmp CyVe
 ```
 
 *This Docker Image is used in context with the AGAVE API and CyVerseUK, so that the output can be integrated into further CyVerse workflows*
+
+## User Instructions for use on the CyVerse Discovery environment
+
+In the Discovery Environment, (1) select “Apps”. (2) Search for “Retrieve-Brassica-Phenotypes” in the search bar and click on the app. (3) In case you want to choose a different output folder, you can change this now. Then, (4) click on Parameters, and (5) insert the BIP trial name as it is registered in BIP and your BIP-API-Key. (6) Click Launch Analysis. The steps are also visualised in fig 1 below.
+
+![alt tag](https://github.com/cyverseuk/Retrieve_BIP_Phenotypes/blob/master/images/figure1.png)
 
 ## User Instructions for use with AGAVE and CyVerse
 You don't need to pull this image, Condor will do this in the background for you.
