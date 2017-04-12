@@ -3,7 +3,7 @@
   "label"         : "Retrieve-Brassica-Phenotypes",
   "appID"         : "",
   "archive"       : "true",
-  "version"       : "0.0.0",
+  "version"       : "0.0.1",
   "executionType" : "CLI",
   "shortDescription" : "To retrieve trait measurements from the Brassica Information Portal",
   "longDescription"  : "This app helps extract trait measurements from a given trial from the Brassica Information Portal. The trial name as it is registered in the BIP is needed, as well as the BIP-API-key. The output file will be a .csv-file with accession identifiers, SRA-identifiers if present and the measurements for the traits of thet trial",
